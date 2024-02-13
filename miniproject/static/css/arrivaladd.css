@@ -1,0 +1,18 @@
+.arradd_main{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-desc{
+    height: 70px;
+    width: 300px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.upimg{
+    width: 200px;
+    border: none;
+    background-color: red;
+}

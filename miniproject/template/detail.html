@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block home%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/detail.css'%}">
+</head>
+<body>
+    <div class="detail_main">
+        <div class="product_div">
+            <div class="product_img">
+                <img src="/home/{{form.image}}">
+            </div>
+            <div class="product_detail">
+                <h3>{{form.name}}</h3>
+                <p>₹{{form.price}}</p>
+                <p>Free Shipping. Price inclusive of all taxes.</p>
+                <div class="colors">
+                    <p>Select color</p>
+                    <div class="color_img">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                    </div>
+                    
+                </div>
+                <button>ADD TO CART</button>
+                <button>ADD TO WISHLIST</button>
+            </div>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
+{%endblock%}

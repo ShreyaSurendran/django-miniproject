@@ -1,0 +1,69 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block home%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/home.css' %}">
+</head>
+<body>
+    <div class="home_main">
+        <div class="offer_div">
+        </div>
+        <div class="something_div">
+            <p>Something for Everyone</p>
+            <div class="something_pik">
+                <div class="some_img">
+                    <img src="{%static 'image/some_pik11.jpg'%}">
+                    <p>Backpack</p>
+                </div>
+                <div class="some_img">
+                    <img src="{%static 'image/some_pik2.jpg'%}">
+                    <p>Wallet</p>
+                </div>
+                <div class="some_img">
+                    <img src="{%static 'image/some_pik3.jpg'%}">
+                    <p>Tote</p>
+                </div>
+                <div class="some_img">
+                    <img src="{%static 'image/some_pik4.jpg'%}">
+                    <p>Handbag</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="define_div">
+            <div class="define_div1">
+                <img src="{%static 'image/define_img1.webp'%}">
+                <div class="define_content">
+                    <p>The clanking of the needles, the whir of the sewing machine,
+                        the snipping of the scissors- these are the sounds we love, 
+                        these are the sounds of the skilled Indian craftsmanship.
+                    </p>
+                </div>
+            </div>
+            <div class="define_div2">
+                <img src="{%static 'image/define_img2.webp'%}">   
+            </div>
+        </div>
+        <div class="trending_today">
+            <p>Trending Today</p>
+            <div class="trending_img">
+                <div class="trendin_1 qw"></div>
+                <div class="trendin_2 qw"></div>
+                <div class="trendin_3 qw"></div>
+                <div class="trendin_4 qw"></div>
+               
+            
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+{%endblock%}

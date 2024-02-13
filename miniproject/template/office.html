@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block home%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/office.css'%}">
+</head>
+<body>
+    <div class="office_main">
+        <div class="office_banner"><p>Office</p></div>
+        <div class="office_content1">
+            {%for i in form%}
+            <div class="office_img">
+                <img src="{{i.image}}">
+                <button class="heart" ><i class="bi bi-heart"></i></button>
+                <a href="{%url 'detail' i.name%}" style="text-decoration: none;"><p>{{i.name}}</p></a>
+                <p>₹{{i.price}}</p><a href="{%url 'login'%}" style="text-decoration: none;color: #884cd2;"><i class="bi bi-cart"></i></a>
+            </div>
+            {%endfor%}
+        </div>
+
+    </div>
+    
+</body>
+</html>
+{%endblock%}

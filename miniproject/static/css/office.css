@@ -1,0 +1,53 @@
+.office_main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.office_main p{
+    color:#884cd2;
+}
+.office_banner{
+    background-image: url("../image/office_bannerpik.webp");
+    height: 473px;
+    width: 100%;
+}
+.office_banner p{
+    color: #884cd2;
+    text-align: center;
+    font-family: myfont;
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+}
+.office_content1{
+    height: 950px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.office_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.heart{
+    height: 35px;
+    width: 35px;
+    border:#ff4f9d 1px solid;
+    border-radius: 17px;
+    position: absolute;
+    left: 255px;
+    top: 15px;
+    background-color: #ff4f9d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

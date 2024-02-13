@@ -1,0 +1,101 @@
+.women_main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bag_head p{
+    font-family: myfont;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4f9d;
+}
+
+.banner_img img{
+    width: 1535px;
+}
+.banner_img{
+    height: 480px;
+}
+
+
+.women_container{
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+
+.women_container_div_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("../image/women1_wallet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.women_container_div_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("../image/women_sling.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.women_container_div_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("../image/women_tote.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.women_container_div_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("../image/women_backpack.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.women_container_div_5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("../image/women_office.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+
+.btn_women{
+    height: 60px;
+    width: 120px;
+    color: white;
+    text-align: center;
+    border: 1px solid #ff4f9d;
+    background-color: #ff4f9d;
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+
+}
+.btn_women:hover{
+    border: 1px solid #884cd2;
+    background-color:#884cd2 ;
+}
+

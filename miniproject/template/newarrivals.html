@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block home%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/newarrivals.css'%}">
+</head>
+<body>
+   
+    <div class="newarr_main">
+        <div class="arrival_banner">
+          <p>New Arrivals<p> 
+          <img src="{%static 'image/arrivalbanner_pik.svg'%}">
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            {%csrf_token%}
+            {%for i in form%}
+        <div class="addnews">
+            <div class="addpik"><img src="/home/{{i.newimage}}"></div>
+            <div class="adddesc">{{i.description}}</div>
+            <div class="buttons1">
+                <a href="{%url 'arrivaledit' i.id%}"><i class="bi bi-pencil"></i></a>
+                <a href="{%url 'arrivaldel' i.id%}"><i class="bi bi-trash-fill"></i></a>
+            </div>
+            
+        </div>
+        {%endfor%}
+        <div class="enddiv">
+            
+           <button type="submit"> <a href="{%url 'arrivaladd'%}" style="text-decoration: none; color: white;">Add more</a></button>
+           
+        </div>
+
+    </div>
+</form>
+</body>
+</html>
+{%endblock%}

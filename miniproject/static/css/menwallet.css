@@ -1,0 +1,85 @@
+.main_menwallet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.mwallet_banner{
+    background-color:#FFD0CF ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mwallet1{
+    height: 400px;
+    width: 700px;
+    background-color: #FFD0CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* animation-name: mwalletanima;
+    animation-duration: 3s;
+    position: relative; */
+    
+}
+.mwallet1 p{
+    font-family: myfont;
+    font-size: 40px;
+    font-weight: bold;
+}
+.mwallet2{
+    height: 400px;
+    width: 800px;
+    background-image: url("../image/mwallet.jpg");
+    animation-name: mwalletanima;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes mwalletanima{
+    0%{
+        top: 0;
+        right: 500px;
+    }
+    100%{
+        top: 0;
+        right: 0;
+    }
+}
+
+.main_menwallet p{
+    color:#884cd2;
+}
+
+
+.mwallet_content_div1{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.mwallet_img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.heart{
+    height: 35px;
+    width: 35px;
+    border:#ff4f9d 1px solid;
+    border-radius: 17px;
+    position: absolute;
+    left: 220px;
+    top: 15px;
+    background-color: #ff4f9d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

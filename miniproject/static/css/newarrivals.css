@@ -1,0 +1,70 @@
+.newarr_main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-self: center;
+}
+.arrival_banner{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.arrival_banner img{
+    position: relative;
+    animation-name: arrivalpik;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes arrivalpik{
+    0%{
+        top: 0;
+        left: 500px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+.arrival_banner p{
+    font-family: myfont;
+    font-size: 90px;
+    font-weight: bold;
+}
+.addnews{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.addpik img{
+    height: 400px;
+    width: 700px;
+}
+.buttons1 a{
+    font-size: 30px;
+    color: #ff4f9d;
+}
+.enddiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.enddiv button{
+    border: 1px solid#ff4f9d;
+    background-color: #ff4f9d;
+    border-radius: 25px;
+    text-decoration: none;
+    height: 50px ;
+    width: 200px;
+    color: white;
+}
+.enddiv button:hover{
+    border: 1px solid#884cd2;
+   background-color: #884cd2;
+}

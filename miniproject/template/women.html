@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block home%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/women.css'%}">
+</head>
+<body>
+    <div class="women_main">
+        <div class="banner_img">
+        <img src="{%static 'image/women_banner.webp'%}">
+        </div>
+        <div class="bag_head">
+             <p>Women Bags</p>
+        </div>
+        <div class="women_container">
+            <div class="women_container_div_1">
+                <a href="{%url 'wallet' %}"><button class="btn_women">Wallets</button></a>
+            </div >
+            <div class="women_container_div_2">
+                <a href="{%url 'sling' %}"><button class="btn_women">Slings</button></a>
+            </div>
+            <div class="women_container_div_3">
+                <a href="{%url 'tote' %}"><button class="btn_women">Totes</button></a>
+            </div>
+            <div class="women_container_div_4">
+                <a href="{%url 'backpack' %}"><button class="btn_women">Backpack</button></a>
+            </div>
+            <div class="women_container_div_5">
+                <a href="{%url 'office' %}"><button class="btn_women">Office</button></a>   
+            </div>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+
+{%endblock%}

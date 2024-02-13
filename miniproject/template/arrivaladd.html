@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block home%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/arrivaladd.css'%}">
+</head>
+<body>
+    <div class="arradd_main">
+    <form method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+            <p>New Offers</p>
+            <label class="form_offer">Offer</label>
+            {{form.offer}}
+            <label class="form_image">Image</label>
+            {{form.newimage}}
+            <label class="form_desc">Description</label>
+            {{form.description}}
+            <button type="submit">Save</button>
+    </div>
+</form>
+</body>
+</html> 
+{%endblock%}
